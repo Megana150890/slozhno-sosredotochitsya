@@ -5,17 +5,22 @@
   font-family: var(--main-font, sans-serif);
   background-color: var(--bg-color, #000028);
   background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   background-position: center;
+  /* left: calc(50% - 1068.6px/2 - 0.2px);
+  top: 0px; */
 
 }
 
 
 .header {
-  position: relative;
   display: grid;
-  grid-template-columns: auto;
-  
+  grid-template-rows: auto max-content auto;
+  align-items: center;
+  position: relative;
+
 }
 .decorated-element {
   position: absolute;
@@ -23,28 +28,60 @@
   block-size: 26px;
   margin-inline-start: 304px;
   margin-block-start: 10px;
-
 }
 
 .decorated-element-rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 10px 0 0;
   color: var(--accent-color);
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  position: absolute;
-  display: inline-block;
-  margin-inline-end: 19px;
+  inset-inline-end: 0;
+  inset-block-start: 0;
 }
-.decorated-element-dot::before {
+.decorated-element-rec::after {
   content: "";
-  position: absolute;
+  display: block;
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
+}
 
+.decorated-zone {
+  position: relative;
+  /* min-block-size: 375px;
+  padding: 10px; */
+  min-block-size: 375px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-inline-end: 0;
+  inset-block-start: 0;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-block-end: 0;
 }
 
 .header__theme-menu-list {
@@ -84,6 +121,7 @@ text-shadow: 4px 4px 0 var(--accent-color);
 .header-paragraph {
   justify-self: end;
 }
+
 .title-decor {
   color: var(--bg-color);
   background-color: var(--accent-color);
