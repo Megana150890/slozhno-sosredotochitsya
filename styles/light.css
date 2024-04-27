@@ -3,6 +3,26 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+/* :root.theme-light {
+  --bg-color: #FFF1F7;
+  --text-color: #353430;
+  --accent-color: #FF8DCB;
+  --main-font: "IBM Plex Mono"; 
+}
+
+/* Остальные стили */
+
+/* @media (prefers-color-scheme: light) {
+:root {
+      /* Дублируем переменные светлой темы */   
+      --bg-color: #FFF1F7;
+      --text-color: #353430;
+      --accent-color: #FF8DCB;
+      --main-font: "IBM Plex Mono";  
+  }
+} */ */
+
+/* Остальные стили */
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
