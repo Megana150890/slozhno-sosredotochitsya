@@ -9,6 +9,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+
   /* left: calc(50% - 1068.6px/2 - 0.2px);
   top: 0px; */
   padding: 10px;
@@ -92,7 +93,6 @@
 }
 
 .header__theme-menu-button {
- 
 font-family: inherit;
 font-weight: 400;
 font-size: 18px;
@@ -112,7 +112,7 @@ button:disabled {
   font-weight: 700;
 font-size: 116px;
 line-height: 82.5%;
-color: #DB00FF;
+color: var(--title-color);
 text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -151,3 +151,10 @@ color: var(--text-color);
 
 }
 
+.footer__title {
+color: var(--title-color);
+text-shadow: 2px 2px 0 var(--accent-color);
+font-weight: 700;
+font-size: 116px;
+line-height: 82.5%;
+}
