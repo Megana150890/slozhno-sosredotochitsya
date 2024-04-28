@@ -58,6 +58,7 @@
 .decorated-zone {
   position: relative;
   min-block-size: 375px;
+  
 }
 
 .decorated-zone::before {
@@ -83,50 +84,77 @@
   inset-block-end: 0;
 }
 
-.header__theme-menu-list {
-  list-style: none;
-}
-
 .header__theme-menu {
+  padding-block-start: 65px;
+  padding-block-end: 65px;
+  padding-inline-start: calc(50% - 70px/2 + 142.5px);
   justify-self: end;
   gap: 10px;
 }
 
+.header__theme-menu-list {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__theme-menu-item {
+  align-items: center;
+  justify-content: center;
+}
+
 .header__theme-menu-button {
-font-family: inherit;
+font-family: "IBM Plex Mono", sans-serif;
 font-weight: 400;
 font-size: 18px;
-line-height: 18px;
+/* line-height: 18px; */
 color: var(--accent-color);
 background-color: transparent;
 border: none;
-
+padding: 0 13px ;
 }
+
 button:disabled {
   pointer-events: none;
 } 
 
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-family: inherit;
+  font-family: var(--main-font);
   font-weight: 700;
-font-size: 116px;
-line-height: 82.5%;
-color: var(--title-color);
-text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header-paragraph {
+  font-weight: 700;
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 23.4px;
+  margin: 55px 0 66px 0;
   justify-self: end;
+
 }
 
 .title-decor {
   color: var(--bg-color);
   background-color: var(--accent-color);
-  font-family: inherit;
+  font-family: var(--main-font);
   font-weight: 700;
-font-size: 18px;
-line-height: 23px;
+  font-size: 18px;
+  line-height: 23.4px
+}
+
+.section_1 {
+  margin-top: 40px;
 }
 
 a {
@@ -148,7 +176,15 @@ color: var(--text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+}
 
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.content__picture {
+  inline-size: 100%;
 }
 
 .footer__title {
