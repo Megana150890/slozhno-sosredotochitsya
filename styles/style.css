@@ -287,4 +287,65 @@ line-height: 82.5%;
   .content__title-2 {
     max-width: 236px;
   }
+
+  .section_3 {
+    margin-block-start: 80px;
+  }
+
+  .section_3-list {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+
+  .section_4 {
+    margin-block-start: 80px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 192px 230px 318px;
+    gap: 20px;
+  }
+
+  .sunset {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+  }
+
+  .ice-cream {
+    grid-column-start:3;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    inline-size: 229px;
+    block-size: 441px;
+    object-fit: cover;
+  }
+
+  .tape {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    inline-size: 229px;
+    block-size: 568px;
+    object-fit: cover;
+  }
+
+  .books {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+
+  .street {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    object-fit: cover;
+    inline-size: 479px;
+    block-size: 318px;
+  }
 }
