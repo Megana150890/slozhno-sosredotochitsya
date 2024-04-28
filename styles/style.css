@@ -11,7 +11,7 @@
   background-position: center;
   /* left: calc(50% - 1068.6px/2 - 0.2px);
   top: 0px; */
-
+  padding: 10px;
 }
 
 
@@ -56,8 +56,6 @@
 
 .decorated-zone {
   position: relative;
-  /* min-block-size: 375px;
-  padding: 10px; */
   min-block-size: 375px;
 }
 
@@ -130,3 +128,26 @@ text-shadow: 4px 4px 0 var(--accent-color);
 font-size: 18px;
 line-height: 23px;
 }
+
+a {
+  color: var(--text-color);
+  text-shadow: 1px 1px 0 var(--accent-color);
+}
+
+.content-paragraph {
+font-family: var(--main-font);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: var(--text-color);
+}
+
+.content__title {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
