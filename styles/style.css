@@ -247,10 +247,12 @@ font-size: 116px;
 line-height: 82.5%;
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .page {
-    padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  }
+      padding: 0 20px;
+}
+  
+ 
 }
 
 @media (min-width: 768px) {
@@ -305,7 +307,7 @@ line-height: 82.5%;
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 192px 230px 318px;
+    grid-template-rows: repeat(3, fit-content);
     gap: 20px;
   }
 
@@ -318,25 +320,29 @@ line-height: 82.5%;
     grid-column-start:3;
     grid-row-start: 1;
     grid-row-end: span 2;
-    inline-size: 229px;
-    block-size: 441px;
+    inline-size: 100%;
+    block-size: 100%;
     object-fit: cover;
   }
 
   .tape {
     grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: span 2;
-    inline-size: 229px;
-    block-size: 568px;
     object-fit: cover;
+    block-size: 100%;
   }
 
   .books {
     grid-column-start: 2;
-    grid-column-end: span 1;
+    grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: span 2;
+    grid-row-end: 3;
+    object-fit: cover;
+    /* min-inline-size: 230px;
+    min-block-size: 230px; */
+
   }
 
   .street {
@@ -345,7 +351,6 @@ line-height: 82.5%;
     grid-row-start: 3;
     grid-row-end: span 1;
     object-fit: cover;
-    inline-size: 479px;
-    block-size: 318px;
+    block-size: 100%;
   }
 }
