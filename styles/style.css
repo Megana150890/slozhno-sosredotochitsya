@@ -4,7 +4,7 @@
   color: var(--text-color,#F1B2CE);
   font-family: var(--main-font, sans-serif);
   background-color: var(--bg-color, #000028);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--cover-image);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -67,8 +67,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decor-color);
+  border-block-start: 1px solid var(--decor-color);
   inset-inline-end: 0;
   inset-block-start: 0;
 }
@@ -79,8 +79,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decor-color);
+  border-block-end: 1px solid var(--decor-color);
   align-self: flex-end;
 }
 
@@ -187,7 +187,7 @@ margin-bottom: 20px;
 }
 
 .content__title {
-  color: var(--accent-color);
+  color: var(--content__title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
