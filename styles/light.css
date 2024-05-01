@@ -29,7 +29,8 @@
 .page::before {
   display: none;
 }
-
-
+.decorated-element-rec {
+  display: none;
+}
 
 /* Остальные стили */ 
