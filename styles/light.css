@@ -14,8 +14,7 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-:root {
-      /* Дублируем переменные светлой темы */    
+  :root {
       --bg-color: #353430;
       --text-color: #353430;
       --accent-color: #FF8DCB;
