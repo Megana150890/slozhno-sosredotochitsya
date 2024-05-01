@@ -14,7 +14,6 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-
 :root {
       /* Дублируем переменные светлой темы */    
       --bg-color: #353430;
@@ -43,7 +42,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--button-color); 
+  border-bottom: 1px solid var(--button-color);
   outline: none;
 }
 /* Остальные стили */ 
