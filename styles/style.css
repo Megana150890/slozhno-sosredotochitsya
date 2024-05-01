@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--accent-color);
+  color: var(--rec-color);
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
@@ -50,8 +50,8 @@
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--rec-color);
+  box-shadow: 0 0 4px 2px var(--rec-color);
 }
 
 .decorated-zone::before {
@@ -60,7 +60,7 @@
   inline-size: 25px;
   block-size: 25px;
   border-inline-start: 1px solid var(--decor-color);
-  border-block-end: 1px solid var(--decor-color);;
+  border-block-end: 1px solid var(--decor-color);
   align-self: end;
 }
 
@@ -130,7 +130,7 @@ button:disabled {
   font-weight: 700;
   line-height: 82.5%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header-paragraph {
@@ -144,7 +144,7 @@ button:disabled {
 }
 
 .title-decor {
-  color: var(--bg-color);
+  color: var(--h4-color);
   background-color: var(--accent-color);
   font-family: var(--main-font);
   font-weight: 700;
