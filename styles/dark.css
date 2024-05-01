@@ -17,6 +17,7 @@
   --button-color: #FF0070;
   --shadow-color: #FF0070;
   --rec-color:#FF0070;
+  --dark-bg-color: rgb(0 0 0 / 0.2);
 }
 
 
@@ -38,4 +39,5 @@
   --button-color: #FF0070;
   --shadow-color: #FF0070;
   --rec-color:#FF0070;
+  --dark-bg-color: rgb(0 0 0 / 0.2);
 }
