@@ -6,6 +6,7 @@
   --title-color: #FFC2E6;
   --cover-image: url(../images/cover-image-light.png);
   --decor-color: #353430;
+  --button-color: #353430;
   
 
 }
@@ -23,6 +24,7 @@
       --cover-image: url(../images/cover-image-light.png);
       --content__title-color: #353430;
       --decor-color: #353430;
+      --button-color: #353430;
   }
 }
 
@@ -33,4 +35,13 @@
   display: none;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+  color: var(--button-color);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-color); 
+  outline: none;
+}
 /* Остальные стили */ 

@@ -12,6 +12,7 @@
   --cover-image: url(../images/cover-image-dark.png);
   --content__title-color: #FF0070;
   --decor-color:#FF0070;
+  --button-color: #FF0070;
 }
 
 
@@ -28,5 +29,6 @@
   --cover-image: url(../images/cover-image-dark.png);
   --content__title-color: #FF0070;
   --decor-color:#FF0070;
+  --button-color: #FF0070;
   
 }

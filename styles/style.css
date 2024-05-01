@@ -108,7 +108,7 @@ font-family: "IBM Plex Mono", sans-serif;
 font-weight: 400;
 font-size: 18px;
 line-height: 18px;
-color: var(--accent-color);
+color: var(--button-color);
 background-color: transparent;
 border: none;
 padding: 0 13px ;
@@ -116,12 +116,21 @@ text-align: center;
 min-block-size: 26px;
 }
 
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-color); 
+  outline: none;
+}
+
 button:disabled {
   pointer-events: none;
 } 
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--button-color);
 }
 
 .header__title {
@@ -166,7 +175,14 @@ button:disabled {
   text-decoration: none;
 }
 
+.paragrph_link:hover {
+  text-decoration: underline;
+}
 
+.paragrph_link:focus-visible {
+  border: 1px solid var(--text-color);
+  outline: none;
+}
 
 .content-paragraph {
 font-family: var(--main-font);
