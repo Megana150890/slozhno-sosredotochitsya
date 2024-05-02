@@ -250,7 +250,7 @@ button:disabled {
   color: var(--title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
 }
 
@@ -297,9 +297,7 @@ button:disabled {
   }
 
   .section_how__list {
-    display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
   }
 
   .picture {
@@ -307,7 +305,6 @@ button:disabled {
   }
 
   .gallery {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr auto;
     gap: 20px;
@@ -317,6 +314,8 @@ button:disabled {
   .sunset {
     grid-column-start: 1;
     grid-column-end: span 2;
+    block-size: 100%;
+    object-fit: cover;
   }
 
   .ice-cream {
@@ -355,14 +354,11 @@ button:disabled {
   }
 
   .footer {
-    display: grid;
     padding: 20px;
   }
 
   .footer__title {
-    font-weight: 700;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 82.5%;
   }
 }
 
