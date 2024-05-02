@@ -2,9 +2,8 @@
   --bg-color: #FFF1F7;
   --title-decor-color: #FF8DCB;
   --text-color: #353430;
-  --h4-color: #353430;
+  --content-subtitle-color: #353430;
   --accent-color: #FF8DCB;
-  --main-font: "IBM Plex Mono";
   --title-color: #FFC2E6;
   --cover-image: url(../images/cover-image-light.png);
   --content__title-color: #353430;
@@ -12,7 +11,7 @@
   --button-color: #353430;
   --shadow-color: #FF0070;
   --rec-color: transparent;
-  --dark-bg-color: transparent;
+  --border-color:rgba(50, 49, 45, 0.4);
 }
 
 /* Остальные стили */
@@ -22,7 +21,7 @@
     --bg-color: #FFF1F7;
     --title-decor-color: #FF8DCB;
     --text-color: #353430;
-    --h4-color: #353430;
+    --content-subtitle-color: #353430;
     --accent-color: #FF8DCB;
     --main-font: "IBM Plex Mono";
     --title-color: #FFC2E6;
@@ -32,17 +31,9 @@
     --button-color: #353430;
     --shadow-color: #FF0070;
     --rec-color: transparent;
-    --dark-bg-color: transparent;
+    --border-color:rgba(50, 49, 45, 0.4);
   }
 }
 
-.header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.4);
-  color: var(--button-color);
-}
 
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--button-color);
-  outline: none;
-}
 /* Остальные стили */ 
