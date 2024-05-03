@@ -31,7 +31,6 @@
   color: var(--rec-color);
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 18px;
   line-height: 25px;
   margin-inline-end: 9px;
   justify-self: end;
@@ -91,7 +90,6 @@
 .header__theme-menu-button {
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
-  font-size: 18px;
   line-height: 18px;
   color: var(--button-color);
   background-color: transparent;
@@ -134,7 +132,6 @@ button:disabled {
   color: var(--content-subtitle-color);
   font-weight: 700;
   font-family: var(--main-font);
-  font-size: 18px;
   line-height: 23.4px;
   align-items: center;
   justify-self: end;
@@ -147,7 +144,6 @@ button:disabled {
 .section_title-item {
   font-weight: 400;
   line-height: 23.4px;
-  font-size: 18px;
   color: var(--content-subtitle-color);
 }
 
@@ -178,7 +174,6 @@ button:disabled {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
   line-height: 23.4px;
   color: var(--text-color);
   margin-bottom: 20px;
@@ -190,9 +185,8 @@ button:disabled {
 
 .section_title {
   color: var(--content__title-color);
-  font-weight: 700;
-  font-size: 18px;
   line-height: 23.4px;
+  font-size: 18px;
 }
 
 .content_title {
@@ -201,6 +195,8 @@ button:disabled {
 
 .content_subtitle {
   margin-block-end: 10px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
 .section_why__list {
@@ -222,10 +218,10 @@ button:disabled {
   margin-block-end: 20px;
 }
 
-.content_subtitle-how {
+/* .content_subtitle-how {
   margin-block-end: 10px;
 
-}
+} */
 
 .gallery {
   display: grid;
