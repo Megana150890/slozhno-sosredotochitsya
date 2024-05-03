@@ -1,8 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  color: var(--text-color, #f1b2ce);
+  color: var(--content-subtitle-color);
   font-family: var(--main-font, sans-serif);
+  font-size: 18px;
+  line-height: 23.4px;
   background-color: var(--bg-color, #000028);
   background-image: var(--cover-image);
   background-repeat: no-repeat;
@@ -129,6 +131,7 @@ button:disabled {
 }
 
 .header-paragraph {
+  color: var(--content-subtitle-color);
   font-weight: 700;
   font-family: var(--main-font);
   font-size: 18px;
@@ -139,13 +142,13 @@ button:disabled {
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--content-subtitle-color);
 }
 
-.text-bold {
-  font-weight: 700;
+.section_title-item {
+  font-weight: 400;
   line-height: 23.4px;
   font-size: 18px;
+  color: var(--content-subtitle-color);
 }
 
 .content-section {
@@ -185,14 +188,14 @@ button:disabled {
   margin-bottom: 0;
 }
 
-.content__title {
+.section_title {
   color: var(--content__title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
 }
 
-.content__title-2 {
+.content_title {
   margin-bottom: 20px;
 }
 
@@ -219,11 +222,9 @@ button:disabled {
   margin-block-end: 20px;
 }
 
-.content_subtitle-h4 {
-  font-weight: 400;
+.content_subtitle-how {
   margin-block-end: 10px;
-  font-size: 18px;
-  line-height: 23.4px;
+
 }
 
 .gallery {
@@ -271,7 +272,6 @@ button:disabled {
   .header-paragraph {
     min-inline-size: 364px;
     max-inline-size: 50%;
-    justify-self: end;
   }
 
   .content-section {
@@ -288,7 +288,7 @@ button:disabled {
     gap: 20px;
   }
 
-  .content__title-2 {
+  .content_subtitle-section-what {
     max-width: 236px;
   }
 
@@ -376,7 +376,7 @@ button:disabled {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .content__title-2 {
+  .content_subtitle-section-what {
     min-inline-size: 315px;
   }
 }
