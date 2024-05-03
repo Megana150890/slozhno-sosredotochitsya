@@ -226,10 +226,6 @@ button:disabled {
   line-height: 23.4px;
 }
 
-.picture {
-  margin-block-start: 50px;
-}
-
 .gallery {
   display: grid;
   gap: 10px;
@@ -282,35 +278,26 @@ button:disabled {
     padding: 60px 20px;
   }
 
+  .questions_section {
+    margin-block-end: 80px;
+  }
+
   .section_why__list {
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
   }
 
-  .section_what {
-    margin-block-start: 80px;
-  }
-
   .content__title-2 {
     max-width: 236px;
-  }
-
-  .section_how {
-    margin-block-start: 80px;
   }
 
   .section_how__list {
     grid-template-columns: 1fr 2fr;
   }
 
-  .picture {
-    margin-block-start: 80px;
-  }
-
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: 1fr 1fr auto; */
     gap: 20px;
     margin-block-start: 20px;
   }
@@ -378,9 +365,6 @@ button:disabled {
 
   .header__theme-menu-list {
     flex-direction: row;
-    /* gap: 10px;
-  align-items: center;
-  justify-content: center; */
   }
 
   .section_why__list {
