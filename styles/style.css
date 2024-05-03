@@ -223,6 +223,8 @@ button:disabled {
 .content_subtitle-h4 {
   font-weight: 400;
   margin-block-end: 10px;
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
 .picture {
