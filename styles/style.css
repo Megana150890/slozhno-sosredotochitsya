@@ -152,6 +152,10 @@ button:disabled {
   padding: 40px 10px;
 }
 
+.questions_section {
+  margin-block-end: 50px;
+}
+
 .paragrph_link {
   color: var(--text-color);
   text-shadow: 2px 2px 0 var(--accent-color);
@@ -188,6 +192,10 @@ button:disabled {
   line-height: 23.4px;
 }
 
+.content__title-2 {
+  margin-bottom: 20px;
+}
+
 .content_subtitle {
   margin-block-end: 10px;
 }
@@ -197,18 +205,9 @@ button:disabled {
   gap: 20px;
 }
 
-.section_what {
-  margin-block-start: 50px;
-}
-
 .section_what__list {
-  margin-block-start: 20px;
   display: grid;
   gap: 20px;
-}
-
-.section_how {
-  margin-block-start: 50px;
 }
 
 .section_how__list {
