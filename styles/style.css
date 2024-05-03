@@ -199,17 +199,7 @@ button:disabled {
   line-height: 23.4px;
 }
 
-.section_why__list {
-  display: grid;
-  gap: 20px;
-}
-
-.section_what__list {
-  display: grid;
-  gap: 20px;
-}
-
-.section_how__list {
+.section-list {
   display: grid;
   gap: 20px;
 }
@@ -218,11 +208,6 @@ button:disabled {
   margin-block-end: 20px;
 }
 
-/* .content_subtitle-how {
-  margin-block-end: 10px;
-
-} */
-
 .gallery {
   display: grid;
   gap: 10px;
@@ -230,6 +215,8 @@ button:disabled {
 
 .content__picture {
   inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -279,9 +266,7 @@ button:disabled {
   }
 
   .section_why__list {
-    display: grid;
     grid-template-columns: 236px 1fr;
-    gap: 20px;
   }
 
   .content_subtitle-section-what {
@@ -301,7 +286,6 @@ button:disabled {
   .sunset {
     grid-column-start: 1;
     grid-column-end: span 2;
-    object-fit: cover;
   }
 
   .ice-cream {
@@ -309,8 +293,6 @@ button:disabled {
     grid-row-start: 1;
     grid-row-end: span 2;
     inline-size: 100%;
-    block-size: 100%;
-    object-fit: cover;
   }
 
   .tape {
@@ -318,8 +300,6 @@ button:disabled {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: span 2;
-    object-fit: cover;
-    block-size: 100%;
   }
 
   .books {
@@ -327,7 +307,6 @@ button:disabled {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    object-fit: cover;
   }
 
   .street {
@@ -335,8 +314,6 @@ button:disabled {
     grid-column-end: span 2;
     grid-row-start: 3;
     grid-row-end: span 1;
-    object-fit: cover;
-    block-size: 100%;
   }
 
   .footer {
@@ -363,9 +340,7 @@ button:disabled {
   }
 
   .section_why__list {
-    display: grid;
     grid-template-columns: 315px 1fr;
-    gap: 20px;
   }
 
   .section_what__list {
