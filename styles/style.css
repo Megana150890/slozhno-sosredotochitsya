@@ -138,6 +138,7 @@ button:disabled {
 }
 
 .title-decor {
+  color: var(--content-subtitle-color);
   background-color: var(--accent-color);
 }
 
@@ -185,9 +186,13 @@ button:disabled {
 }
 
 .section_title {
-  color: var(--content__title-color);
+  color: var(--decor-color);
   line-height: 23.4px;
   font-size: 18px;
+}
+
+h3.title-decor {
+  margin-bottom: 10px;
 }
 
 .content_title {
@@ -205,8 +210,8 @@ button:disabled {
   gap: 20px;
 }
 
-.content_subtitle-section_how {
-  margin-block-end: 20px;
+h3.title-decor.content_subtitle-section_how {
+  margin-bottom: 20px;
 }
 
 .gallery {
