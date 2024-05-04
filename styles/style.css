@@ -138,14 +138,11 @@ button:disabled {
 }
 
 .title-decor {
-  color: var(--content-subtitle-color);
   background-color: var(--accent-color);
 }
 
 .section_title-item {
   font-weight: 400;
-  line-height: 23.4px;
-  color: var(--content-subtitle-color);
   margin-block-end: 10px;
 }
 
