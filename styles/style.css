@@ -272,7 +272,7 @@ h3.title-decor.content_subtitle-section_how {
     grid-template-columns: 236px 1fr;
   }
 
-  .content_subtitle-section-what {
+  .content_title {
     max-width: 236px;
   }
 
@@ -350,7 +350,7 @@ h3.title-decor.content_subtitle-section_how {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .content_subtitle-section-what {
+  .content_title {
     min-inline-size: 315px;
   }
 }
